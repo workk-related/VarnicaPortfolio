@@ -188,197 +188,182 @@ const Home: React.FC = () => {
 
           <SkillsCarousel categories={skillCategories} />
 
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold text-center mb-8">My Product Management Arsenal</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {/* Product Management Tools */}
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-200 dark:border-blue-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" className="w-10 h-10" />
+          {/* Tools & Technologies Section */}
+          <div className="mt-16">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-accent to-purple-600 bg-clip-text text-transparent">
+                My Product Management Toolkit
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                The strategic arsenal I use to transform ideas into impactful products
+              </p>
+            </div>
+
+            {/* Product Management Core */}
+            <div className="mb-12">
+              <div className="flex items-center justify-center mb-8">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent to-transparent max-w-xs"></div>
+                <h4 className="px-6 text-xl font-bold text-accent">Strategy & Planning</h4>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent to-transparent max-w-xs"></div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" className="w-10 h-10 filter brightness-0 invert" />
                   </div>
-                  <span className="text-sm font-semibold text-blue-800 dark:text-blue-200">Jira</span>
-                  <span className="text-xs text-blue-600 dark:text-blue-300 mt-1">Project Tracking</span>
+                  <p className="text-center mt-2 text-sm font-medium">Jira</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="Confluence" className="w-10 h-10 filter brightness-0 invert" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">Confluence</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-slate-500 to-slate-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" className="w-10 h-10 filter brightness-0 invert" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">Notion</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-10 h-10 filter brightness-0 invert" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">Trello</p>
                 </div>
               </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-indigo-200 dark:border-indigo-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="Confluence" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-indigo-800 dark:text-indigo-200">Confluence</span>
-                  <span className="text-xs text-indigo-600 dark:text-indigo-300 mt-1">Documentation</span>
-                </div>
+            </div>
+
+            {/* Design & User Experience */}
+            <div className="mb-12">
+              <div className="flex items-center justify-center mb-8">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent max-w-xs"></div>
+                <h4 className="px-6 text-xl font-bold text-purple-600">Design & UX</h4>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent max-w-xs"></div>
               </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-200 dark:border-purple-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
+              <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-10 h-10" />
                   </div>
-                  <span className="text-sm font-semibold text-purple-800 dark:text-purple-200">Figma</span>
-                  <span className="text-xs text-purple-600 dark:text-purple-300 mt-1">Design & Prototyping</span>
+                  <p className="text-center mt-2 text-sm font-medium">Figma</p>
                 </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-pink-200 dark:border-pink-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">M</span>
-                    </div>
-                  </div>
-                  <span className="text-sm font-semibold text-pink-800 dark:text-pink-200">Mixpanel</span>
-                  <span className="text-xs text-pink-600 dark:text-pink-300 mt-1">Analytics</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-green-200 dark:border-green-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-green-800 dark:text-green-200">Slack</span>
-                  <span className="text-xs text-green-600 dark:text-green-300 mt-1">Communication</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-blue-50 to-cyan-100 dark:from-cyan-900/20 dark:to-cyan-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-cyan-200 dark:border-cyan-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-cyan-800 dark:text-cyan-200">Trello</span>
-                  <span className="text-xs text-cyan-600 dark:text-cyan-300 mt-1">Task Management</span>
-                </div>
-              </div>
-              
-              {/* Development Tools */}
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-orange-50 to-red-100 dark:from-red-900/20 dark:to-orange-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-200 dark:border-orange-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-orange-800 dark:text-orange-200">Java</span>
-                  <span className="text-xs text-orange-600 dark:text-orange-300 mt-1">Backend Development</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-green-50 to-emerald-100 dark:from-emerald-900/20 dark:to-green-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-emerald-200 dark:border-emerald-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-emerald-800 dark:text-emerald-200">Spring Boot</span>
-                  <span className="text-xs text-emerald-600 dark:text-emerald-300 mt-1">Framework</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-200 dark:border-blue-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-blue-800 dark:text-blue-200">SQL</span>
-                  <span className="text-xs text-blue-600 dark:text-blue-300 mt-1">Database</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-yellow-50 to-orange-100 dark:from-orange-900/20 dark:to-yellow-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-200 dark:border-orange-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <div className="w-10 h-10 bg-gradient-to-r from-orange-400 to-yellow-500 rounded flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">AWS</span>
-                    </div>
-                  </div>
-                  <span className="text-sm font-semibold text-orange-800 dark:text-orange-200">AWS</span>
-                  <span className="text-xs text-orange-600 dark:text-orange-300 mt-1">Cloud Platform</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-red-50 to-orange-100 dark:from-red-900/20 dark:to-orange-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-red-200 dark:border-red-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-red-800 dark:text-red-200">Git</span>
-                  <span className="text-xs text-red-600 dark:text-red-300 mt-1">Version Control</span>
-                </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900/20 dark:to-gray-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" className="w-10 h-10" />
-                  </div>
-                  <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">Jenkins</span>
-                  <span className="text-xs text-gray-600 dark:text-gray-300 mt-1">CI/CD</span>
-                </div>
-              </div>
-              
-              {/* Design & Analytics */}
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-purple-50 to-pink-100 dark:from-pink-900/20 dark:to-purple-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-200 dark:border-purple-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" className="w-10 h-10" />
                   </div>
-                  <span className="text-sm font-semibold text-purple-800 dark:text-purple-200">Canva</span>
-                  <span className="text-xs text-purple-600 dark:text-purple-300 mt-1">Visual Design</span>
+                  <p className="text-center mt-2 text-sm font-medium">Canva</p>
                 </div>
               </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-yellow-50 to-orange-100 dark:from-orange-900/20 dark:to-yellow-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-yellow-200 dark:border-yellow-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://www.vectorlogo.zone/logos/google_analytics/google_analytics-icon.svg" alt="Google Analytics" className="w-10 h-10" />
+            </div>
+
+            {/* Analytics & Data */}
+            <div className="mb-12">
+              <div className="flex items-center justify-center mb-8">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-green-500 to-transparent max-w-xs"></div>
+                <h4 className="px-6 text-xl font-bold text-green-600">Analytics & Data</h4>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-green-500 to-transparent max-w-xs"></div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <span className="text-white font-bold text-2xl">M</span>
                   </div>
-                  <span className="text-sm font-semibold text-yellow-800 dark:text-yellow-200">Analytics</span>
-                  <span className="text-xs text-yellow-600 dark:text-yellow-300 mt-1">Data Insights</span>
+                  <p className="text-center mt-2 text-sm font-medium">Mixpanel</p>
                 </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-gray-50 to-slate-100 dark:from-slate-900/20 dark:to-gray-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200 dark:border-slate-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" className="w-10 h-10" />
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
                   </div>
-                  <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">Notion</span>
-                  <span className="text-xs text-slate-600 dark:text-slate-300 mt-1">Knowledge Base</span>
+                  <p className="text-center mt-2 text-sm font-medium">Analytics</p>
                 </div>
-              </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-orange-50 to-red-100 dark:from-red-900/20 dark:to-orange-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-200 dark:border-orange-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">PP</span>
-                    </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h2v2H7V7zm0 4h2v2H7v-2zm0 4h2v2H7v-2zm4-8h6v2h-6V7zm0 4h6v2h-6v-2zm0 4h6v2h-6v-2z"/>
+                    </svg>
                   </div>
-                  <span className="text-sm font-semibold text-orange-800 dark:text-orange-200">PowerPoint</span>
-                  <span className="text-xs text-orange-600 dark:text-orange-300 mt-1">Presentations</span>
+                  <p className="text-center mt-2 text-sm font-medium">Excel</p>
                 </div>
               </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-green-50 to-emerald-100 dark:from-emerald-900/20 dark:to-green-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-green-200 dark:border-green-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
-                    <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">XL</span>
-                    </div>
+            </div>
+
+            {/* Communication & Collaboration */}
+            <div className="mb-12">
+              <div className="flex items-center justify-center mb-8">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent max-w-xs"></div>
+                <h4 className="px-6 text-xl font-bold text-blue-600">Communication</h4>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent max-w-xs"></div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-10 h-10" />
                   </div>
-                  <span className="text-sm font-semibold text-green-800 dark:text-green-200">Excel</span>
-                  <span className="text-xs text-green-600 dark:text-green-300 mt-1">Data Analysis</span>
+                  <p className="text-center mt-2 text-sm font-medium">Slack</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM3 5h18v2H3V5zm0 4h18v10H3V9z"/>
+                      <path d="M5 11h6v2H5v-2zm0 4h4v2H5v-2z"/>
+                    </svg>
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">PowerPoint</p>
                 </div>
               </div>
-              
-              <div className="group relative">
-                <div className="flex flex-col items-center p-6 bg-gradient-to-br from-orange-50 to-red-100 dark:from-red-900/20 dark:to-orange-800/20 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-orange-200 dark:border-orange-700">
-                  <div className="w-16 h-16 mb-4 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center shadow-md">
+            </div>
+
+            {/* Technical Foundation */}
+            <div className="mb-12">
+              <div className="flex items-center justify-center mb-8">
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent max-w-xs"></div>
+                <h4 className="px-6 text-xl font-bold text-orange-600">Technical Foundation</h4>
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent max-w-xs"></div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-10 h-10" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">Java</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-10 h-10" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">Spring Boot</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" className="w-10 h-10" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">SQL</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.75 11.35a4.32 4.32 0 0 0-.79-.08 4.32 4.32 0 0 0-4.32 4.32c0 .27.03.53.08.79L12 17.77l-1.72-1.39c.05-.26.08-.52.08-.79a4.32 4.32 0 0 0-4.32-4.32c-.27 0-.53.03-.79.08L6.64 12l1.39-1.72c-.05-.26-.08-.52-.08-.79a4.32 4.32 0 0 1 4.32-4.32c.27 0 .53.03.79.08L12 6.64l1.72 1.39c-.05.26-.08.52-.08.79a4.32 4.32 0 0 1 4.32 4.32c0 .27-.03.53-.08.79L17.36 12l-1.39 1.72z"/>
+                    </svg>
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">AWS</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-10 h-10" />
+                  </div>
+                  <p className="text-center mt-2 text-sm font-medium">Git</p>
+                </div>
+                <div className="group">
+                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" className="w-10 h-10" />
                   </div>
-                  <span className="text-sm font-semibold text-orange-800 dark:text-orange-200">Postman</span>
-                  <span className="text-xs text-orange-600 dark:text-orange-300 mt-1">API Testing</span>
+                  <p className="text-center mt-2 text-sm font-medium">Postman</p>
                 </div>
               </div>
             </div>
