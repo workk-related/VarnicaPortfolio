@@ -21,8 +21,8 @@ export const experiences: ExperienceType[] = [
     companyLogo: chapterAppsLogo,
     role: 'Product Manager',
     period: 'Present',
-    description: 'Leading product strategy and development initiatives, driving user-centered product decisions and cross-functional team collaboration to deliver impactful solutions.',
-    skills: ['Product Strategy', 'User Research', 'Product Roadmapping', 'Cross-functional Leadership', 'Data-driven Decision Making', 'Agile Product Development']
+    description: 'Leading multi-product development across AI, SaaS, and HR Tech domains. Managing 3+ concurrent projects including an AI-powered HR recruitment platform, WhatsApp bot for farmers, and enterprise LMS/CMS solutions. Driving product strategy, client relationships, and cross-functional team coordination.',
+    skills: ['Multi-Project Management', 'AI Product Development', 'SaaS Architecture', 'Client Relationship Management', 'HR Tech Solutions', 'Cross-functional Leadership', 'Product Strategy', 'Agile Methodology']
   },
   {
     id: 'infosys',

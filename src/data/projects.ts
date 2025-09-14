@@ -126,10 +126,22 @@ const allProjects: ProjectType[] = [
 
 export const projectCategories: ProjectCategory[] = [
   {
+    id: 'current-projects',
+    title: 'Current Product Leadership (Chapter Apps)',
+    description: 'Leading multiple concurrent products across AI, SaaS, and enterprise domains as Product Manager at Chapter Apps.',
+    projects: allProjects.filter(project => project.id.startsWith('chapter-apps'))
+  },
+  {
     id: 'ecommerce',
     title: 'E-commerce & Digital Transformation',
     description: 'Enterprise-level e-commerce solutions and digital transformation initiatives for global brands.',
     projects: allProjects.filter(project => project.category === 'ecommerce')
+  },
+  {
+    id: 'agritech',
+    title: 'Agricultural Technology',
+    description: 'AI-powered solutions for agriculture and rural technology applications.',
+    projects: allProjects.filter(project => project.category === 'agritech')
   },
   {
     id: 'edtech',

@@ -386,33 +386,33 @@ const Home: React.FC = () => {
               <div className="px-6">
                 <h3 className="text-2xl font-bold text-accent flex items-center gap-3">
                   <span className="w-3 h-3 bg-accent rounded-full animate-pulse"></span>
-                  Current Impact Projects
+                  Current Product Leadership
                   <span className="w-3 h-3 bg-accent rounded-full animate-pulse"></span>
                 </h3>
               </div>
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent to-transparent"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projects.filter(p => ['wella-ecommerce-platform', 'adidas-labelling'].includes(p.id)).map((project, index) => (
+              {projects.filter(p => p.id.startsWith('chapter-apps')).slice(0, 2).map((project, index) => (
                 <ProjectCard key={project.id} project={project} index={index} />
               ))}
             </div>
           </div>
           
-          {/* Key Product Achievements */}
+          {/* Enterprise Impact Projects */}
           <div className="mb-16">
             <div className="flex items-center mb-8">
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
               <div className="px-6">
                 <h3 className="text-2xl font-bold text-purple-600 flex items-center gap-3">
                   <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
-                  Product Innovation Highlights
+                  Enterprise Impact Projects
                 </h3>
               </div>
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {projects.filter(p => ['smart-spending-dashboard', 'ats-portal'].includes(p.id)).map((project, index) => (
+              {projects.filter(p => ['wella-ecommerce-platform', 'adidas-labelling'].includes(p.id)).map((project, index) => (
                 <ProjectCard key={project.id} project={project} index={index} />
               ))}
             </div>
