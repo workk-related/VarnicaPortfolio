@@ -23,15 +23,15 @@ interface LinkButtonProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> 
 const getVariantClasses = (variant: ButtonVariant = 'primary') => {
   switch (variant) {
     case 'primary':
-      return 'bg-accent hover:bg-accent/90 text-white dark:bg-accent dark:text-white dark:hover:bg-accent/80';
+      return 'bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg dark:bg-accent dark:text-white dark:hover:bg-accent/80';
     case 'secondary':
-      return 'bg-secondary text-secondary-foreground hover:bg-secondary/80 dark:bg-secondary dark:text-white dark:hover:bg-secondary/60';
+      return 'bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm hover:shadow-md dark:bg-secondary dark:text-white dark:hover:bg-secondary/60';
     case 'outline':
-      return 'border-2 border-accent text-accent hover:bg-accent/10 dark:border-accent dark:text-white dark:hover:bg-accent/20';
+      return 'border-2 border-accent text-accent hover:bg-accent/10 shadow-sm hover:shadow-md dark:border-accent dark:text-white dark:hover:bg-accent/20';
     case 'ghost':
       return 'hover:bg-accent/10 text-accent dark:text-white dark:hover:bg-accent/20';
     default:
-      return 'bg-accent hover:bg-accent/90 text-white dark:bg-accent dark:text-white dark:hover:bg-accent/80';
+      return 'bg-accent hover:bg-accent/90 text-white shadow-md hover:shadow-lg dark:bg-accent dark:text-white dark:hover:bg-accent/80';
   }
 };
 

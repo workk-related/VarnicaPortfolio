@@ -192,14 +192,14 @@ const Home: React.FC = () => {
           <div className="mt-16">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-accent to-purple-600 bg-clip-text text-transparent">
-                My Product Management Toolkit
+                Tools & Technologies
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                The strategic arsenal I use to transform ideas into impactful products
+                The comprehensive toolkit I leverage to drive product success and deliver exceptional results
               </p>
             </div>
 
-            {/* Product Management Core */}
+            {/* Strategy & Planning */}
             <div className="mb-12">
               <div className="flex items-center justify-center mb-8">
                 <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent to-transparent max-w-xs"></div>
@@ -208,26 +208,26 @@ const Home: React.FC = () => {
               </div>
               <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Jira" className="w-10 h-10 filter brightness-0 invert" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg" alt="Jira" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Jira</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="Confluence" className="w-10 h-10 filter brightness-0 invert" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://wac-cdn.atlassian.com/dam/jcr:5fa10482-3b5b-4e64-8714-1f5e1e1b5c7e/Confluence-blue.svg" alt="Confluence" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Confluence</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-slate-500 to-slate-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" className="w-10 h-10 filter brightness-0 invert" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" className="w-10 h-10" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Notion</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-10 h-10 filter brightness-0 invert" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/trello.svg" alt="Trello" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Trello</p>
                 </div>
@@ -243,14 +243,14 @@ const Home: React.FC = () => {
               </div>
               <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/figma-5.svg" alt="Figma" className="w-10 h-10" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Figma</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/canva-1.svg" alt="Canva" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Canva</p>
                 </div>
@@ -266,27 +266,20 @@ const Home: React.FC = () => {
               </div>
               <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <span className="text-white font-bold text-2xl">M</span>
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mixpanel.svg" alt="Mixpanel" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Mixpanel</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/google-analytics-4.svg" alt="Google Analytics" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Analytics</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h2v2H7V7zm0 4h2v2H7v-2zm0 4h2v2H7v-2zm4-8h6v2h-6V7zm0 4h6v2h-6v-2zm0 4h6v2h-6v-2z"/>
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/microsoft-excel-2013.svg" alt="Excel" className="w-10 h-10" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Excel</p>
                 </div>
@@ -302,17 +295,14 @@ const Home: React.FC = () => {
               </div>
               <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg" alt="Slack" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Slack</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM3 5h18v2H3V5zm0 4h18v10H3V9z"/>
-                      <path d="M5 11h6v2H5v-2zm0 4h4v2H5v-2z"/>
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/microsoft-powerpoint-2013.svg" alt="PowerPoint" className="w-10 h-10" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">PowerPoint</p>
                 </div>
@@ -328,40 +318,38 @@ const Home: React.FC = () => {
               </div>
               <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java" className="w-10 h-10" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Java</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="Spring Boot" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Spring Boot</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="SQL" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">SQL</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <svg className="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M18.75 11.35a4.32 4.32 0 0 0-.79-.08 4.32 4.32 0 0 0-4.32 4.32c0 .27.03.53.08.79L12 17.77l-1.72-1.39c.05-.26.08-.52.08-.79a4.32 4.32 0 0 0-4.32-4.32c-.27 0-.53.03-.79.08L6.64 12l1.39-1.72c-.05-.26-.08-.52-.08-.79a4.32 4.32 0 0 1 4.32-4.32c.27 0 .53.03.79.08L12 6.64l1.72 1.39c-.05.26-.08.52-.08.79a4.32 4.32 0 0 1 4.32 4.32c0 .27-.03.53-.08.79L17.36 12l-1.39 1.72z"/>
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">AWS</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git" className="w-10 h-10" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Git</p>
                 </div>
                 <div className="group">
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" className="w-10 h-10" />
+                  <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200">
+                    <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="Postman" className="w-12 h-12" />
                   </div>
                   <p className="text-center mt-2 text-sm font-medium">Postman</p>
                 </div>
@@ -384,10 +372,8 @@ const Home: React.FC = () => {
             <div className="flex items-center mb-8">
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent to-transparent"></div>
               <div className="px-6">
-                <h3 className="text-2xl font-bold text-accent flex items-center gap-3">
-                  <span className="w-3 h-3 bg-accent rounded-full animate-pulse"></span>
-                  Current Product Leadership
-                  <span className="w-3 h-3 bg-accent rounded-full animate-pulse"></span>
+              <h3 className="text-2xl font-bold text-accent">
+                Recent Projects
                 </h3>
               </div>
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent to-transparent"></div>
@@ -462,7 +448,7 @@ const Home: React.FC = () => {
           />
           
           <div className="space-y-6">
-            {experiences.slice(0, 2).map((experience, index) => (
+            {projects.filter(p => ['wella-ecommerce-platform', 'adidas-labelling'].includes(p.id)).map((project, index) => (
               <ExperienceCard key={experience.id} experience={experience} index={index} />
             ))}
           </div>
@@ -474,7 +460,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-
+        {/* Product Development */}
       {/* Image Section */}
       <div className="w-full overflow-hidden" style={{ maxHeight: '600px' }}>
         <img
@@ -493,13 +479,13 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-accent via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                Product Development
               Ready to Build the Next Big Thing?
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Let's turn your vision into reality. I bring the perfect blend of technical expertise, strategic thinking, and user empathy to drive product success.
             </p>
-            <LinkButton to="/contact" size="lg" className="bg-gradient-to-r from-accent to-purple-600 hover:from-accent/90 hover:to-purple-600/90">
+            {projects.filter(p => ['ats-portal', 'smart-spending-dashboard'].includes(p.id)).map((project, index) => (
               Let's Connect & Create Impact <ArrowRight className="ml-2" size={18} />
             </LinkButton>
           </motion.div>
