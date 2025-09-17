@@ -1,10 +1,3 @@
-import AdidasImage from '../assets/images/Adidas.png';
-import JobPortalImage from '../assets/images/JobPortal.png';
-import SeekhoProductsImage from '../assets/images/SeekhoProducts.png';
-import CerebryPrductImage from '../assets/images/CerebryProduct.png';
-import SmartSpendingImage from '../assets/images/SmartSpendingProduct.png';
-import WellaImage from '../assets/images/WellaProject.png';
-
 export interface ProjectCategory {
   id: string;
   title: string;
@@ -35,13 +28,13 @@ const allProjects: ProjectType[] = [
     id: 'wella-ecommerce-platform',
     title: 'Powering Personalized Campaigns for Wella with Talon.One',
     shortDescription: 'Currently leading the digital transformation for Wella Professionals by defining functional and technical requirements, and integrating Talon.One to automate personalized promotions, campaigns, and loyalty programs across their e-commerce platform.',
-    description: 'This ongoing project is part of Wella Professionals’ shift toward scalable e-commerce automation. As the Technical Product Lead, I’m responsible for defining functional, technical, and system requirements, and working closely with cross-functional teams to integrate Talon.One for promotions management. The objective is to move away from manual campaign processes and build an automated, data-driven setup for handling promotions, coupons, and loyalty workflows—all aligned with Wella’s brand strategy and customer engagement goals.',
-    coverImage: WellaImage,
+    description: "This ongoing project is part of Wella Professionals' shift toward scalable e-commerce automation. As the Technical Product Lead, I'm responsible for defining functional, technical, and system requirements, and working closely with cross-functional teams to integrate Talon.One for promotions management. The objective is to move away from manual campaign processes and build an automated, data-driven setup for handling promotions, coupons, and loyalty workflows—all aligned with Wella's brand strategy and customer engagement goals.",
+    coverImage: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['E-commerce', 'Digital Transformation', 'Marketing Automation', 'API Integration', 'Personalization', 'Campaign Management'],
     role: 'Systems Consultant and Developer',
     tools: ['Talon.One', 'Jira', 'Confluence', 'Postman', 'MS Excel'],
-    challenges: 'The main challenge is aligning Talon.One’s flexible campaign engine with Wella’s business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.',
+    challenges: "The main challenge is aligning Talon.One's flexible campaign engine with Wella's business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.",
     solutions: 'Defined and documented detailed campaign flows and use cases across various promotional types. Coordinated with engineering and business teams to validate functional requirements and created sample campaigns for scenarios like first-time user offers, loyalty rewards, and seasonal events. Utilized Postman to test Talon.One APIs.',
     impact: 'The project is currently in development and not yet live. However, foundational setup is complete, and the solution is expected to streamline campaign execution, reduce manual effort, and enable smarter, personalized promotions once launched.',
     category: 'ecommerce'
@@ -51,7 +44,7 @@ const allProjects: ProjectType[] = [
     title: 'Adidas International Labelling App',
     shortDescription: 'Led development of a critical labelling system for Adidas\' international markets, improving efficiency by 40%.',
     description: 'I took full ownership of developing, maintaining, and managing Adidas\' International Labelling Application, an essential backbone for ensuring every product complies with labelling laws across global markets. From building the core system to overseeing ongoing updates, I made sure the platform stayed rock-solid, scalable, and user-friendly for a global team.',
-    coverImage: AdidasImage,
+    coverImage: 'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['Java', 'SpringBoot', 'Agile Product Development', 'Technical & Business Requirements Analysis', 'Feature Prioritization & Roadmapping'],
     role: 'Senior Systems Engineer',
@@ -66,7 +59,7 @@ const allProjects: ProjectType[] = [
     title: 'Smart Spending App',
     shortDescription: 'Designed and developed a comprehensive personal finance dashboard that transforms raw transactions into actionable insights.',
     description: 'The Smart Spending Application is a personal finance dashboard designed to empower users with real-time insights into their spending behavior. Built using Java, Spring Boot, SQL for the backend and Angular, HTML, CSS, Bootstrap for the frontend, the application offers an intuitive, visual snapshot of monthly expenses, categorized intelligently for actionable financial decisions.',
-    coverImage: SmartSpendingImage,
+    coverImage: 'https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['FinTech', 'Full-Stack Development', 'Product Strategy', 'UX Design', 'Agile Development', 'MVP Definition'],
     role: 'Full-Stack Developer with Product Ownership',
@@ -81,7 +74,7 @@ const allProjects: ProjectType[] = [
     title: 'Advanced ATS Job Portal',
     shortDescription: 'Designed a smart job portal integrated with an ATS to simplify recruitment for both job seekers and recruiters. Enabled skill-based matching, automated application tracking, and streamlined hiring workflows.',
     description: 'As the product manager, I drove the vision and execution of an advanced ATS-integrated job portal designed to transform hiring—simplifying how recruiters find the best talent and how candidates navigate the job search. My role spanned from deep market research to defining the product roadmap, prioritizing features, and aligning cross-functional teams.',
-    coverImage: JobPortalImage,
+    coverImage: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['Product Management', 'Product Roadmapping', 'UX Design', 'MVP Scoping', 'Problem Solving'],
     role: 'Associate Product Manager',
@@ -96,7 +89,7 @@ const allProjects: ProjectType[] = [
     title: 'Personalized Education Solutions',
     shortDescription: 'Led the development of a suite of edtech products focused on upskilling and career readiness. Translated ideas into MVPs by aligning user needs with agile execution and cross-functional collaboration.',
     description: 'At Seekho 360, I was brought in during a high-stakes phase where the vision was big, but execution hadn\'t taken off yet. The team aimed to launch three flagship products—Unishala, PowerSchoolz, and the Seekho 360 aggregator app. Each product had a clear audience and strong potential: Unishala was built as a deeply informative blog platform for engineering aspirants and government exam students; PowerSchoolz was envisioned as an intuitive course delivery platform with a strong focus on learner engagement; and the Seekho 360 app aimed to be an all-in-one aggregator for courses ranging from UPSC prep to study abroad programs. My role was to take these early-stage ideas and turn them into actionable, structured, and scalable project blueprints.',
-    coverImage: SeekhoProductsImage,
+    coverImage: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['Project Management', 'Product Strategy', 'MVP Definition', 'EdTech', 'Execution Planning', 'Cross-functional Alignment'],
     role: 'Project Manager',
@@ -111,7 +104,7 @@ const allProjects: ProjectType[] = [
     title: 'AI-Based Math Learning Platform',
     shortDescription: 'Led project execution for an adaptive math platform that personalizes practice paths using AI. Ensured on-time delivery and alignment with learning outcomes across multiple school deployments.',
     description: 'During my time at Cerebry, I worked at the intersection of education and artificial intelligence, managing a platform designed to deliver adaptive math practice to learners across various geographies. As an Assistant Project Manager Intern, I played a key role in streamlining product delivery and ensuring that the AI-powered system could deliver dynamic, personalized content efficiently and accurately. My role involved coordinating across tech, AI, and academic teams, and transforming a fast-moving startup environment into a well-oiled product delivery machine.',
-    coverImage: CerebryPrductImage,
+    coverImage: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['EdTech', 'AI in Education', 'Personalized Learning', 'Agile Project Management', 'Product Operations', 'Cross-Team Collaboration'],
     role: 'Associate PM Intern',
@@ -126,10 +119,10 @@ const allProjects: ProjectType[] = [
 
 export const projectCategories: ProjectCategory[] = [
   {
-    id: 'current-projects',
-    title: 'Current Product Leadership (Chapter Apps)',
-    description: 'Leading multiple concurrent products across AI, SaaS, and enterprise domains as Product Manager at Chapter Apps.',
-    projects: allProjects.filter(project => project.id.startsWith('chapter-apps'))
+    id: 'recent-projects',
+    title: 'Recent Projects',
+    description: 'Latest product development initiatives and technical implementations.',
+    projects: allProjects.slice(0, 3)
   },
   {
     id: 'ecommerce',
@@ -138,28 +131,10 @@ export const projectCategories: ProjectCategory[] = [
     projects: allProjects.filter(project => project.category === 'ecommerce')
   },
   {
-    id: 'agritech',
-    title: 'Agricultural Technology',
-    description: 'AI-powered solutions for agriculture and rural technology applications.',
-    projects: allProjects.filter(project => project.category === 'agritech')
-  },
-  {
-    id: 'edtech',
-    title: 'Educational Technology',
-    description: 'AI-powered learning platforms and educational product development focused on personalized learning experiences.',
-    projects: allProjects.filter(project => project.category === 'edtech')
-  },
-  {
-    id: 'fintech',
-    title: 'Financial Technology',
-    description: 'Personal finance applications and smart spending solutions with data-driven insights.',
-    projects: allProjects.filter(project => project.category === 'fintech')
-  },
-  {
-    id: 'hrtech',
-    title: 'HR Technology',
-    description: 'Recruitment and talent management solutions with ATS integration and smart matching algorithms.',
-    projects: allProjects.filter(project => project.category === 'hrtech')
+    id: 'product-development',
+    title: 'Product Development',
+    description: 'End-to-end product development across various domains including EdTech, FinTech, and HR Technology.',
+    projects: allProjects.filter(project => ['edtech', 'fintech', 'hrtech'].includes(project.category))
   }
 ];
 
