@@ -10,13 +10,13 @@ interface ExperienceCardProps {
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) => {
   return (
     <motion.div
-      className="flex flex-col md:flex-row items-start gap-6 p-6 rounded-lg bg-card shadow-lg hover:shadow-xl transition-all duration-300 border border-border"
+      className="flex flex-col md:flex-row items-start gap-6 p-6 rounded-lg bg-card shadow-sm hover:shadow-md transition-shadow"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
       <div className="shrink-0">
-        <div className="w-20 h-20 rounded-md bg-white flex items-center justify-center overflow-hidden shadow-sm border border-gray-200">
+        <div className="w-20 h-20 rounded-md bg-white flex items-center justify-center overflow-hidden">
           <img 
             src={experience.companyLogo} 
             alt={`${experience.company} logo`} 
@@ -38,7 +38,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) =>
           {experience.skills.map((skill) => (
             <span
               key={skill}
-              className="rounded-full bg-secondary px-3 py-1 text-xs font-medium border border-border"
+              className="rounded-full bg-secondary px-3 py-1 text-xs font-medium"
             >
               {skill}
             </span>
