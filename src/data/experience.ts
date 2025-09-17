@@ -41,7 +41,7 @@ const allProjects: ProjectType[] = [
     tags: ['E-commerce', 'Digital Transformation', 'Marketing Automation', 'API Integration', 'Personalization', 'Campaign Management'],
     role: 'Systems Consultant and Developer',
     tools: ['Talon.One', 'Jira', 'Confluence', 'Postman', 'MS Excel'],
-    challenges: 'The main challenge is aligning Talon.One\'s flexible campaign engine with Wella's business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.',
+    challenges: 'The main challenge is aligning Talon.One\'s flexible campaign engine with Wella\'s business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.',
     solutions: 'Defined and documented detailed campaign flows and use cases across various promotional types. Coordinated with engineering and business teams to validate functional requirements and created sample campaigns for scenarios like first-time user offers, loyalty rewards, and seasonal events. Utilized Postman to test Talon.One APIs.',
     impact: 'The project is currently in development and not yet live. However, foundational setup is complete, and the solution is expected to streamline campaign execution, reduce manual effort, and enable smarter, personalized promotions once launched.',
     category: 'ecommerce'
