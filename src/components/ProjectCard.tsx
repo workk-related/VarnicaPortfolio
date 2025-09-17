@@ -12,21 +12,21 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div
-      className="group flex flex-col overflow-hidden rounded-xl bg-card shadow-lg hover:shadow-2xl transition-all duration-300 border border-border"
+      className="group flex flex-col overflow-hidden rounded-lg bg-card shadow-lg transition-all hover:shadow-xl border border-border"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ y: -8, scale: 1.02 }}
+      whileHover={{ y: -8 }}
     >
       <div className="relative overflow-hidden">
-  <Link to={`/projects/${project.id}`} className="w-full block rounded-t-xl overflow-hidden bg-white flex items-center justify-center">
+  <Link to={`/projects/${project.id}`} className="w-full block rounded-t-lg overflow-hidden bg-white flex items-center justify-center">
     <img
       src={project.coverImage}
       alt={project.title}
-      className="w-full aspect-video object-contain transition-transform duration-300 group-hover:scale-105"
+      className="w-full aspect-video object-contain"
     />
   </Link>
-  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
+  <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
 </div>
 
       <div className="flex flex-1 flex-col p-6">
@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full bg-accent/10 text-accent px-3 py-1 text-xs font-medium border border-accent/20"
+              className="rounded-full bg-secondary px-3 py-1 text-xs font-medium border border-border"
             >
               {tag}
             </span>
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         </div>
 
         <div className="mt-4 flex justify-end">
-          <LinkButton to={`/projects/${project.id}`} variant="primary" size="sm">
+          <LinkButton to={`/projects/${project.id}`} variant="outline" size="sm">
             View Project
           </LinkButton>
         </div>
