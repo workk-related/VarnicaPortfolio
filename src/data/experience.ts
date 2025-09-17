@@ -8,17 +8,11 @@ export interface ExperienceType {
   skills: string[];
 }
 
-import infosysLogo from '../assets/images/infosys-logo-png (1).png';
-import seekhoLogo from '../assets/images/Seekho360.png';
-import perimatticLogo from '../assets/images/Perimattic.png';
-import cerebryLogo from '../assets/images/Cerebry Logo.png';
-import chapterAppsLogo from '../assets/images/Logo.png';
-
 export const experiences: ExperienceType[] = [
   {
     id: 'chapter-apps',
     company: 'Chapter Apps',
-    companyLogo: chapterAppsLogo,
+    companyLogo: 'https://via.placeholder.com/100x100/4F46E5/FFFFFF?text=CA',
     role: 'Product Manager',
     period: 'Present',
     description: 'Leading multi-product development across AI, SaaS, and HR Tech domains. Managing 3+ concurrent projects including an AI-powered HR recruitment platform, WhatsApp bot for farmers, and enterprise LMS/CMS solutions. Driving product strategy, client relationships, and cross-functional team coordination.',
@@ -27,7 +21,7 @@ export const experiences: ExperienceType[] = [
   {
     id: 'infosys',
     company: 'Infosys Limited',
-    companyLogo: infosysLogo,
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg',
     role: 'Senior Systems Engineer',
     //period: '2022 - 2024',
     description: 'Developed and maintained enterprise-level backend systems using Java, SpringBoot, and SQL. Collaborated with cross-functional teams to ensure timely delivery of features, focusing on quality and scalability.',
@@ -36,7 +30,7 @@ export const experiences: ExperienceType[] = [
   {
     id: 'seekho360',
     company: 'Seekho 360',
-    companyLogo: seekhoLogo,
+    companyLogo: 'https://via.placeholder.com/100x100/10B981/FFFFFF?text=S360',
     role: 'Project Manager',
     //period: 'Sep 2023 – Dec 2023',
     description: 'Spearheaded the planning and execution of three educational products. Coordinated across design and development teams, driving agile sprints and comprehensive product documentation.',
@@ -45,7 +39,7 @@ export const experiences: ExperienceType[] = [
   {
     id: 'perimattic',
     company: 'Perimattic Pvt Ltd.',
-    companyLogo: perimatticLogo,
+    companyLogo: 'https://via.placeholder.com/100x100/F59E0B/FFFFFF?text=P',
     role: 'Associate Product Manager',
     //period: 'May 2022 – Aug 2022',
     description: 'Owned end-to-end product planning for a smart job portal integrated with ATS. Conducted user research, authored PRDs, and collaborated closely with engineering on MVP development.',
@@ -54,7 +48,7 @@ export const experiences: ExperienceType[] = [
   {
     id: 'cerebry',
     company: 'Cerebry Pte. Ltd.',
-    companyLogo: cerebryLogo,
+    companyLogo: 'https://via.placeholder.com/100x100/8B5CF6/FFFFFF?text=C',
     role: 'Associate Project Manager Intern',
     //period: 'Nov 2021 – Mar 2022',
     description: 'Led AI-driven project initiatives for personalized math learning. Managed timelines, coordinated with cross-functional teams, and ensured smooth project execution aligned with user-centric goals.',
