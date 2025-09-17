@@ -22,7 +22,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, skills }) => {
       >
         {/* Front */}
         <div className="absolute w-full h-full backface-hidden">
-          <div className="w-full h-full bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 flex items-center justify-center text-center hover:shadow-xl transition-shadow">
+          <div className="w-full h-full bg-card rounded-xl p-6 shadow-lg border border-border flex items-center justify-center text-center hover:shadow-xl transition-all duration-300">
             <h3 className={`text-2xl font-bold ${gradientText}`}>
               {title}
             </h3>
@@ -31,10 +31,10 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, skills }) => {
 
         {/* Back */}
         <div className="absolute w-full h-full backface-hidden rotate-y-180">
-          <div className="w-full h-full bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 overflow-auto hover:shadow-xl transition-shadow">
+          <div className="w-full h-full bg-card rounded-xl p-6 shadow-lg border border-border overflow-auto hover:shadow-xl transition-all duration-300">
             <ul className="list-disc list-inside space-y-2">
               {skills.map((skill, index) => (
-                <li key={index} className="text-sm text-gray-700 dark:text-gray-200">
+                <li key={index} className="text-sm text-foreground">
                   {skill}
                 </li>
               ))}

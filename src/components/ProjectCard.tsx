@@ -12,21 +12,21 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <motion.div
-      className="group flex flex-col overflow-hidden rounded-lg bg-card shadow-md transition-all hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-lg bg-card shadow-lg transition-all hover:shadow-xl border border-border"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ y: -5 }}
+      whileHover={{ y: -8 }}
     >
       <div className="relative overflow-hidden">
-  <Link to={`/projects/${project.id}`} className="w-full block rounded-lg overflow-hidden shadow-md bg-white flex items-center justify-center">
+  <Link to={`/projects/${project.id}`} className="w-full block rounded-t-lg overflow-hidden bg-white flex items-center justify-center">
     <img
       src={project.coverImage}
       alt={project.title}
       className="w-full aspect-video object-contain"
     />
   </Link>
-  <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
+  <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:opacity-0 pointer-events-none" />
 </div>
 
       <div className="flex flex-1 flex-col p-6">
@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full bg-secondary px-3 py-1 text-xs font-medium"
+              className="rounded-full bg-secondary px-3 py-1 text-xs font-medium border border-border"
             >
               {tag}
             </span>
