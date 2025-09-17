@@ -28,13 +28,13 @@ const allProjects: ProjectType[] = [
     id: 'wella-ecommerce-platform',
     title: 'Powering Personalized Campaigns for Wella with Talon.One',
     shortDescription: 'Currently leading the digital transformation for Wella Professionals by defining functional and technical requirements, and integrating Talon.One to automate personalized promotions, campaigns, and loyalty programs across their e-commerce platform.',
-    description: 'This ongoing project is part of Wella Professionals\' shift toward scalable e-commerce automation. As the Technical Product Lead, I\'m responsible for defining functional, technical, and system requirements, and working closely with cross-functional teams to integrate Talon.One for promotions management. The objective is to move away from manual campaign processes and build an automated, data-driven setup for handling promotions, coupons, and loyalty workflows—all aligned with Wella\'s brand strategy and customer engagement goals.',
+    description: "This ongoing project is part of Wella Professionals' shift toward scalable e-commerce automation. As the Technical Product Lead, I'm responsible for defining functional, technical, and system requirements, and working closely with cross-functional teams to integrate Talon.One for promotions management. The objective is to move away from manual campaign processes and build an automated, data-driven setup for handling promotions, coupons, and loyalty workflows—all aligned with Wella's brand strategy and customer engagement goals.",
     coverImage: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
     images: [],
     tags: ['E-commerce', 'Digital Transformation', 'Marketing Automation', 'API Integration', 'Personalization', 'Campaign Management'],
     role: 'Systems Consultant and Developer',
     tools: ['Talon.One', 'Jira', 'Confluence', 'Postman', 'MS Excel'],
-    challenges: 'The main challenge is aligning Talon.One\'s flexible campaign engine with Wella's business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.',
+    challenges: "The main challenge is aligning Talon.One's flexible campaign engine with Wella's business use cases while maintaining simplicity for end users. The system needs to support global campaign structures, segment-based targeting, and real-time personalization without disrupting existing workflows.",
     solutions: 'Defined and documented detailed campaign flows and use cases across various promotional types. Coordinated with engineering and business teams to validate functional requirements and created sample campaigns for scenarios like first-time user offers, loyalty rewards, and seasonal events. Utilized Postman to test Talon.One APIs.',
     impact: 'The project is currently in development and not yet live. However, foundational setup is complete, and the solution is expected to streamline campaign execution, reduce manual effort, and enable smarter, personalized promotions once launched.',
     category: 'ecommerce'
@@ -119,10 +119,10 @@ const allProjects: ProjectType[] = [
 
 export const projectCategories: ProjectCategory[] = [
   {
-    id: 'current-projects',
-    title: 'Current Product Leadership (Chapter Apps)',
-    description: 'Leading multiple concurrent products across AI, SaaS, and enterprise domains as Product Manager at Chapter Apps.',
-    projects: allProjects.filter(project => project.id.startsWith('chapter-apps'))
+    id: 'recent-projects',
+    title: 'Recent Projects',
+    description: 'Latest product development initiatives and technical implementations.',
+    projects: allProjects.slice(0, 3)
   },
   {
     id: 'ecommerce',
@@ -131,28 +131,10 @@ export const projectCategories: ProjectCategory[] = [
     projects: allProjects.filter(project => project.category === 'ecommerce')
   },
   {
-    id: 'agritech',
-    title: 'Agricultural Technology',
-    description: 'AI-powered solutions for agriculture and rural technology applications.',
-    projects: allProjects.filter(project => project.category === 'agritech')
-  },
-  {
-    id: 'edtech',
-    title: 'Educational Technology',
-    description: 'AI-powered learning platforms and educational product development focused on personalized learning experiences.',
-    projects: allProjects.filter(project => project.category === 'edtech')
-  },
-  {
-    id: 'fintech',
-    title: 'Financial Technology',
-    description: 'Personal finance applications and smart spending solutions with data-driven insights.',
-    projects: allProjects.filter(project => project.category === 'fintech')
-  },
-  {
-    id: 'hrtech',
-    title: 'HR Technology',
-    description: 'Recruitment and talent management solutions with ATS integration and smart matching algorithms.',
-    projects: allProjects.filter(project => project.category === 'hrtech')
+    id: 'product-development',
+    title: 'Product Development',
+    description: 'End-to-end product development across various domains including EdTech, FinTech, and HR Technology.',
+    projects: allProjects.filter(project => ['edtech', 'fintech', 'hrtech'].includes(project.category))
   }
 ];
 

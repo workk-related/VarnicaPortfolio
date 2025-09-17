@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Mail, Phone, MapPin, Calendar, Users, Award, TrendingUp } from 'lucide-react';
-import Button from '../components/Button';
+import { Button, LinkButton } from '../components/Button';
 import ProjectCard from '../components/ProjectCard';
 import ExperienceCard from '../components/ExperienceCard';
 import SkillsCarousel from '../components/SkillsCarousel';
@@ -11,7 +11,7 @@ import { experiences } from '../data/experience';
 
 const Home: React.FC = () => {
   useEffect(() => {
-    document.title = 'Arpit Sharma - Product Manager & Systems Engineer';
+    document.title = 'Varnica - Product & Project Manager';
   }, []);
 
   const featuredProjects = projects.slice(0, 3);
@@ -24,40 +24,95 @@ const Home: React.FC = () => {
     { icon: TrendingUp, label: 'Efficiency Improvement', value: '40%' }
   ];
 
+  const skillCategories = [
+    {
+      title: 'Product Management',
+      skills: [
+        'Product Strategy & Roadmapping',
+        'User Research & Analysis',
+        'Feature Prioritization',
+        'Stakeholder Management',
+        'Agile & Scrum Methodologies',
+        'Product Requirements Documentation',
+        'Go-to-Market Strategy',
+        'Data-Driven Decision Making'
+      ]
+    },
+    {
+      title: 'Technical Skills',
+      skills: [
+        'Java & Spring Boot',
+        'SQL & Database Design',
+        'AWS Cloud Services',
+        'API Integration',
+        'System Architecture',
+        'Microservices',
+        'Git Version Control',
+        'CI/CD Pipelines'
+      ]
+    },
+    {
+      title: 'Project Management',
+      skills: [
+        'Cross-functional Team Leadership',
+        'Sprint Planning & Execution',
+        'Risk Management',
+        'Timeline & Resource Planning',
+        'Quality Assurance',
+        'Process Optimization',
+        'Vendor Management',
+        'Budget Planning'
+      ]
+    },
+    {
+      title: 'Tools & Platforms',
+      skills: [
+        'Jira & Confluence',
+        'Figma & Design Tools',
+        'Slack & Communication',
+        'Notion & Documentation',
+        'Postman & API Testing',
+        'Google Analytics',
+        'Tableau & Data Visualization',
+        'Microsoft Office Suite'
+      ]
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-32 pb-20">
+        <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 Product Manager &{' '}
-                <span className="text-blue-600">Systems Engineer</span>
+                <span className="text-accent">Systems Engineer</span>
               </h1>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Transforming complex business challenges into scalable digital solutions. 
                 Specialized in e-commerce platforms, AI-driven products, and cross-functional team leadership.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button variant="primary" size="lg" className="group">
+                <LinkButton to="/contact" variant="primary" size="lg" className="group">
                   <Mail className="w-5 h-5 mr-2" />
                   Get In Touch
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="secondary" size="lg">
+                </LinkButton>
+                <LinkButton to="/VarnicaBajaj-Resume.pdf" variant="secondary" size="lg">
                   <Download className="w-5 h-5 mr-2" />
                   Download Resume
-                </Button>
+                </LinkButton>
               </div>
-              <div className="flex items-center gap-6 text-slate-600">
+              <div className="flex items-center gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>Bangalore, India</span>
+                  <span>Delhi, India</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
@@ -72,7 +127,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8">
+              <div className="relative z-10 bg-card rounded-2xl shadow-2xl p-8 border border-border">
                 <div className="grid grid-cols-2 gap-6">
                   {stats.map((stat, index) => (
                     <motion.div
@@ -82,33 +137,33 @@ const Home: React.FC = () => {
                       transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
                       className="text-center"
                     >
-                      <stat.icon className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-slate-900">{stat.value}</div>
-                      <div className="text-sm text-slate-600">{stat.label}</div>
+                      <stat.icon className="w-8 h-8 text-accent mx-auto mb-2" />
+                      <div className="text-2xl font-bold">{stat.value}</div>
+                      <div className="text-sm text-muted-foreground">{stat.label}</div>
                     </motion.div>
                   ))}
                 </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl transform rotate-3 -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent/10 rounded-2xl transform rotate-3 -z-10"></div>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-secondary/30">
+        <div className="container-custom">
           <SectionHeading
             title="Core Expertise"
             subtitle="Technologies and methodologies I leverage to drive product success"
           />
-          <SkillsCarousel />
+          <SkillsCarousel categories={skillCategories} />
         </div>
       </section>
 
       {/* Featured Projects */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20">
+        <div className="container-custom">
           <SectionHeading
             title="Featured Projects"
             subtitle="Recent work showcasing product leadership and technical expertise"
@@ -122,22 +177,22 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <ProjectCard project={project} />
+                <ProjectCard project={project} index={index} />
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button variant="secondary" size="lg">
+            <LinkButton to="/projects" variant="secondary" size="lg">
               View All Projects
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+            </LinkButton>
           </div>
         </div>
       </section>
 
       {/* Experience Preview */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-secondary/30">
+        <div className="container-custom">
           <SectionHeading
             title="Professional Journey"
             subtitle="Key roles and achievements in product management and engineering"
@@ -151,43 +206,44 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <ExperienceCard experience={experience} />
+                <ExperienceCard experience={experience} index={index} />
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button variant="secondary" size="lg">
+            <LinkButton to="/experience" variant="secondary" size="lg">
               View Full Experience
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+            </LinkButton>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-r from-accent/90 to-accent">
+        <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="text-center max-w-4xl mx-auto"
           >
             <h2 className="text-4xl font-bold text-white mb-6">
               Ready to Build Something Amazing?
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Let's discuss how I can help drive your product vision forward with strategic thinking and technical expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+              <LinkButton to="/contact" variant="secondary" size="lg" className="bg-white text-accent hover:bg-white/90">
                 <Mail className="w-5 h-5 mr-2" />
                 Start a Conversation
-              </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
+              </LinkButton>
+              <LinkButton to="/VarnicaBajaj-Resume.pdf" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-accent">
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
-              </Button>
+              </LinkButton>
             </div>
           </motion.div>
         </div>
